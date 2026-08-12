@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built to showcase my skills, edu
 
 ## 🌐 Live Demo
 
-[Visit My Portfolio](https://sagheer-abbas-portfolio.vercel.app/)
+[Visit My Portfolio] <a target='_blank'>(https://sagheer-abbas-portfolio.vercel.app/)</a>
 
 ## 👨‍💻 About Me
 
