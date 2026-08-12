@@ -45,6 +45,7 @@ import reactjs from "./reactjs.png";
 import expressjs from "./expressjs.png";
 import nodejs from "./nodejs.png";
 import deployment from "./deployment.png"
+import download_dark from "./download_dark.png"
 
 export const assets = {
   user_image,
@@ -90,6 +91,7 @@ export const assets = {
   nodejs,
   expressjs,
   deployment,
+  download_dark
 };
 
 export const workData = [
@@ -167,4 +169,4 @@ export const infoList = [
   },
 ];
 
-export const toolsData = [assets.expressjs, assets.nodejs, assets.reactjs];
+export const toolsData = [assets.expressjs, assets.nodejs, assets.reactjs, assets.git, assets.mongodb];

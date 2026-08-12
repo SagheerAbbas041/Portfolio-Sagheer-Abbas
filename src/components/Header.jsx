@@ -2,7 +2,7 @@ import { assets } from "../assets/assets";
 import resume from "../assets/public/Sagheer-Abbas.pdf";
 import { motion } from "motion/react";
 
-const Header = () => {
+const Header = ({isDarkMode}) => {
   return (
     <div
       className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col
@@ -63,7 +63,7 @@ const Header = () => {
          gap-2"
           download
         >
-          My Resuma <img src={assets.download_icon} alt="" className="w-4" />
+          My Resuma <img src={isDarkMode ? assets.download_dark : assets.download_icon} alt="" className="w-4" />
         </motion.a>
       </div>
     </div>
