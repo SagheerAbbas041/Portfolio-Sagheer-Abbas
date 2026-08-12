@@ -1,41 +1,48 @@
 # Sagheer Abbas - Portfolio
 
-A modern, responsive personal portfolio website built to showcase my skills, education, professional experience, services, projects, and contact information as a MERN Stack Developer.
+A modern and responsive personal portfolio website built to showcase my skills, education, professional experience, services, projects, and resume as a MERN Stack Developer.
 
 ## 🌐 Live Preview
 
-<p>
-  <a href="https://sagheer-abbas-portfolio.vercel.app/" target="_blank">
-    🚀 View Live Portfolio
-  </a>
-</p>
+<a href="https://sagheer-abbas-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+  🚀 View Live Portfolio
+</a>
 
 ## 👨‍💻 About Me
 
 Hi, I'm **Sagheer Abbas**, a MERN Stack Developer passionate about building modern, responsive, and user-friendly web applications.
 
-I work with technologies such as React.js, JavaScript, Node.js, Express.js, MongoDB, REST APIs, Tailwind CSS, and Git/GitHub.
+I specialize in:
 
-This portfolio represents my development journey, technical skills, projects, education, and professional experience.
+- JavaScript
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- REST APIs
+- Tailwind CSS
+- Git & GitHub
+
+This portfolio showcases my development journey, technical skills, education, professional experience, services, and projects.
 
 ## ✨ Features
 
-- 📱 Fully responsive design
+- 🌐 Modern and responsive portfolio website
 - 🌙 Dark and light mode
+- 📱 Fully responsive design
 - 🧭 Responsive navigation bar
-- 📖 About Me section
-- 🎓 Education information
+- 👨‍💻 About Me section
+- 🎓 Education section
 - 💼 Professional experience
-- 🛠️ Technical skills and development tools
-- 💻 Services section
-- 🚀 Projects / Latest Work section
+- 🛠️ Technical skills
+- 🚀 Services section
+- 💻 Projects / Latest Work section
 - 📄 Resume / CV download
 - 📩 Contact section
-- 🎨 Modern and clean UI
-- ✨ Smooth animations
-- 📱 Mobile-friendly mobile menu
-- 🔗 Social and project links
-- ⚡ Fast and optimized React application
+- ✨ Smooth animations using Motion
+- 📱 Mobile navigation menu
+- 🔗 GitHub and social links
+- ⚡ Fast development with Vite
 
 ## 🛠️ Technologies Used
 
@@ -48,27 +55,27 @@ This portfolio represents my development journey, technical skills, projects, ed
 - Tailwind CSS
 - Motion
 
-### Tools
+### Development Tools
 
+- Vite
 - Git
 - GitHub
 - VS Code
-- Vite
 - Vercel
 
 ## 📂 Portfolio Sections
 
 ### 🏠 Home
 
-Introduction section containing my name, role, short introduction, and links to important sections of the portfolio.
+Introduction section containing my name, role, short description, and important links.
 
 ### 👨‍💻 About Me
 
-Provides information about my development skills, education, experience, and projects.
+Information about my development skills, education, experience, and projects.
 
 ### 🛠️ Services
 
-Showcases the services I provide, including:
+The services section showcases:
 
 - Web Development
 - Mobile App Development
@@ -77,21 +84,29 @@ Showcases the services I provide, including:
 
 ### 💻 My Work
 
-Displays my latest projects with project titles, descriptions, images, and project links.
+A collection of my latest projects with project images, titles, descriptions, and links.
+
+### 🎓 Education
+
+Information about my educational background and Computer Science degree.
+
+### 💼 Experience
+
+Details about my professional development experience and technical expertise.
 
 ### 📄 Resume
 
-Visitors can view or download my resume/CV directly from the portfolio.
+Visitors can view or download my resume directly from the portfolio.
 
 ### 📩 Contact
 
-Allows visitors to get in touch with me for projects, opportunities, or other professional inquiries.
+A contact section for professional inquiries, collaborations, projects, and opportunities.
 
 ## 🌙 Dark Mode
 
-The portfolio includes a dark/light mode toggle.
+The portfolio supports both light and dark themes.
 
-The theme is managed using React state and Tailwind CSS:
+Dark mode is controlled using React state:
 
 ```jsx
 const [isDarkMode, setIsDarkMode] = useState(true);
