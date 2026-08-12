@@ -98,7 +98,7 @@ const About = ({ isDarkMode }) => {
             transition={{ duration: 0.5, delay: 1.3 }}
             className="my-6 text-gray-700 font-ovo dark:text-white/80"
           >
-            Tool I Use
+            Stack I Use
           </motion.h4>
 
           <motion.ul
