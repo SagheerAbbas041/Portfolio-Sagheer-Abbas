@@ -1,4 +1,5 @@
-import { assets, serviceData } from "../assets/assets";
+import { ArrowRight } from "lucide-react";
+import { serviceData } from "../assets/assets";
 import { motion } from "motion/react";
 
 const Services = () => {
@@ -43,26 +44,35 @@ const Services = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10"
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            key={index}
-            className="border border-gray-400 rounded-lg px-8 py-12
-             hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
-              duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
-          >
-            <img src={icon} alt="" className="w-10" />
-            <h3 className="text-lg my-4 text-gray-700 dark:text-white">
-              {title}
-            </h3>
-            <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
-              {description}
-            </p>
-            <a href={link} className="flex items-center gap-2 text-sm mt-5">
-              Read more <img src={assets.right_arrow} alt="" className="w-4" />
-            </a>
-          </motion.div>
-        ))}
+        {serviceData.map(
+          ({ icon: IconComponent, title, description, link }, index) => (
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              key={index}
+              className="border border-gray-400 rounded-lg px-8 py-12
+                     hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                     duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+            >
+              <IconComponent className="w-10 h-10 text-gray-700 dark:text-white" />
+
+              <h3 className="text-lg my-4 text-gray-700 dark:text-white">
+                {title}
+              </h3>
+
+              <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
+                {description}
+              </p>
+
+              <a
+                href={link}
+                className="flex items-center gap-2 text-sm mt-5 text-gray-700 dark:text-white"
+              >
+                Read more
+                <ArrowRight className="w-4 h-4 text-gray-700 dark:text-white" />
+              </a>
+            </motion.div>
+          ),
+        )}
       </motion.div>
     </motion.div>
   );

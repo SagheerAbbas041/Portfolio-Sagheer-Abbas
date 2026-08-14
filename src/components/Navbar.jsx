@@ -102,27 +102,15 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             px-10 border border-gray-500 rounded-full ml-4 font-ovo dark:border-white/50"
           >
             Contact
-
             <img
-              src={
-                isDarkMode
-                  ? assets.arrow_icon_dark
-                  : assets.arrow_icon
-              }
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               className="w-3"
             />
           </a>
 
-          <button
-            className="block md:hidden ml-3"
-            onClick={openMenu}
-          >
+          <button className="block md:hidden ml-3" onClick={openMenu}>
             <img
-              src={
-                isDarkMode
-                  ? assets.menu_white
-                  : assets.menu_black
-              }
+              src={isDarkMode ? assets.menu_white : assets.menu_black}
               alt=""
               className="w-6"
             />
@@ -137,67 +125,40 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
           dark:bg-darkHover dark:text-white"
         >
-          <div
-            className="absolute top-6 right-6"
-            onClick={closeMenu}
-          >
+          <div className="absolute top-6 right-6" onClick={closeMenu}>
             <img
-              src={
-                isDarkMode
-                  ? assets.close_white
-                  : assets.close_black
-              }
+              src={isDarkMode ? assets.close_white : assets.close_black}
               alt=""
               className="w-5 cursor-pointer"
             />
           </div>
 
           <li>
-            <a
-              className="font-Ovo"
-              onClick={closeMenu}
-              href="#top"
-            >
+            <a className="font-Ovo" onClick={closeMenu} href="#top">
               Home
             </a>
           </li>
 
           <li>
-            <a
-              className="font-Ovo"
-              onClick={closeMenu}
-              href="#about"
-            >
+            <a className="font-Ovo" onClick={closeMenu} href="#about">
               About me
             </a>
           </li>
 
           <li>
-            <a
-              className="font-Ovo"
-              onClick={closeMenu}
-              href="#services"
-            >
+            <a className="font-Ovo" onClick={closeMenu} href="#services">
               Services
             </a>
           </li>
 
           <li>
-            <a
-              className="font-Ovo"
-              onClick={closeMenu}
-              href="#work"
-            >
+            <a className="font-Ovo" onClick={closeMenu} href="#work">
               My Work
             </a>
           </li>
 
           <li>
-            <a
-              className="font-Ovo"
-              onClick={closeMenu}
-              href="#contact"
-            >
+            <a className="font-Ovo" onClick={closeMenu} href="#contact">
               Contact me
             </a>
           </li>

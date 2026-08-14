@@ -1,7 +1,7 @@
 import { assets, infoList, toolsData } from "../assets/assets";
 import { motion } from "motion/react";
 
-const About = ({ isDarkMode }) => {
+const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -68,28 +68,27 @@ const About = ({ isDarkMode }) => {
             transition={{ duration: 0.8, delay: 1 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
           >
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <motion.li
-                whileHover={{ scale: 1.05 }}
-                className="border-[0.5px] border-gray-400 rounded-xl
-                 cursor-pointer px-5 hover:bg-lightHover hover:-translate-y-1 duration-500
-                  hover:shadow-black dark:border-white dark:hover:shadow-white
-                   dark:hover:bg-darkHover/50"
-                key={index}
-              >
-                <img
-                  src={isDarkMode ? iconDark : icon}
-                  alt={title}
-                  className="w-7 mt-3"
-                />
-                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
-                  {title}
-                </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
-                  {description}
-                </p>
-              </motion.li>
-            ))}
+            {infoList.map(
+              ({ icon: IconComponent, title, description }, index) => (
+                <motion.li
+                  whileHover={{ scale: 1.05 }}
+                  className="border-[0.5px] border-gray-400 rounded-xl
+                     cursor-pointer px-5 py-4 hover:bg-lightHover hover:-translate-y-1 duration-500
+                     hover:shadow-black dark:border-white dark:hover:shadow-white
+                     dark:hover:bg-darkHover/50"
+                  key={index}
+                >
+                  <IconComponent className="w-7 h-7 mt-3 text-gray-700 dark:text-white" />
+
+                  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
+                    {title}
+                  </h3>
+                  <p className="text-gray-600 text-sm dark:text-white/80">
+                    {description}
+                  </p>
+                </motion.li>
+              ),
+            )}
           </motion.ul>
 
           <motion.h4
@@ -107,17 +106,19 @@ const About = ({ isDarkMode }) => {
             transition={{ duration: 0.6, delay: 1.5 }}
             className="flex items-center gap-3 sm:gap-5"
           >
-            {toolsData.map((tool, index) => (
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                className="flex items-center justify-center w-12
-                 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer
-                  hover:-translate-y-1 duration-500"
-                key={index}
-              >
-                <img src={tool} alt="Tool" className="w-5 sm:w-7" />
-              </motion.li>
-            ))}
+            {toolsData.map((tool, index) => {
+              const IconComponent = tool.icon;
+
+              return (
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 dark:border-gray-600 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 bg-white dark:bg-gray-800"
+                  key={index}
+                >
+                  <IconComponent className="w-5 h-5 sm:w-7 sm:h-7 text-gray-800 dark:text-white transition-colors duration-300" />
+                </motion.li>
+              );
+            })}
           </motion.ul>
         </motion.div>
       </motion.div>

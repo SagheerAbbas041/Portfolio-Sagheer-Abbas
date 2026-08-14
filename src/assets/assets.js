@@ -1,5 +1,3 @@
-import frontend from "./frontend.png";
-import backend from "./backend.png";
 import user_image from "./user-image.png";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
@@ -7,11 +5,6 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
@@ -41,11 +34,6 @@ import work_1 from "./work-1.jpg";
 import work_2 from "./work-2.jpg";
 import work_3 from "./work-3.png";
 import work_4 from "./work-4.png";
-import reactjs from "./reactjs.png";
-import expressjs from "./expressjs.png";
-import nodejs from "./nodejs.png";
-import deployment from "./deployment.png"
-import download_dark from "./download_dark.png"
 
 export const assets = {
   user_image,
@@ -55,11 +43,6 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
-  vscode,
-  firebase,
-  figma,
-  git,
-  mongodb,
   right_arrow_white,
   logo,
   logo_dark,
@@ -85,13 +68,6 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
-  frontend,
-  backend,
-  reactjs,
-  nodejs,
-  expressjs,
-  deployment,
-  download_dark
 };
 
 export const workData = [
@@ -117,30 +93,32 @@ export const workData = [
   },
 ];
 
+import { Palette, Rocket, Code2, Server } from "lucide-react";
+
 export const serviceData = [
   {
-    icon: assets.web_icon,
+    icon: Palette, // Direct design/UI concept ko highlight karta hai
     title: "Web Design",
     description:
       "Responsive and modern websites built with clean layouts and user-friendly designs.",
     link: "",
   },
   {
-    icon: assets.deployment,
+    icon: Rocket, // Best choice for deployment & hosting
     title: "Deployment",
     description:
       "Deploying and hosting web applications using platforms like Vercel, Render, and Netlify.",
     link: "",
   },
   {
-    icon: assets.frontend,
+    icon: Code2, // Standard icon for frontend coding / client-side dev
     title: "Frontend Development",
     description:
       "Building responsive and interactive web interfaces using React.js, JavaScript, Tailwind CSS, and modern frontend technologies.",
     link: "",
   },
   {
-    icon: assets.backend,
+    icon: Server, // Standard icon for backend/servers
     title: "Backend Development",
     description:
       "Developing secure and scalable backend systems using Node.js, Express.js, MongoDB, and REST APIs.",
@@ -148,25 +126,38 @@ export const serviceData = [
   },
 ];
 
+import { GraduationCap, FolderGit2 } from "lucide-react";
+
 export const infoList = [
   {
-    icon: assets.code_icon,
-    iconDark: assets.code_icon_dark,
+    icon: Code2, // Languages / Coding ke liye
     title: "Languages",
-    description: "Mern Stack",
+    description: "MERN Stack",
   },
   {
-    icon: assets.edu_icon,
-    iconDark: assets.edu_icon_dark,
+    icon: GraduationCap, // Education ke liye standard icon
     title: "Education",
     description: "BS in Computer Science",
   },
   {
-    icon: assets.project_icon,
-    iconDark: assets.project_icon_dark,
+    icon: FolderGit2, // Projects / Repositories ke liye
     title: "Projects",
     description: "Built more than 3 projects",
   },
 ];
 
-export const toolsData = [assets.expressjs, assets.nodejs, assets.reactjs, assets.git, assets.mongodb];
+import {
+  SiExpress,
+  SiNodedotjs,
+  SiReact,
+  SiGit,
+  SiMongodb,
+} from "react-icons/si";
+
+export const toolsData = [
+  { icon: SiExpress, name: "ExpressJS" },
+  { icon: SiNodedotjs, name: "NodeJS" },
+  { icon: SiReact, name: "ReactJS" },
+  { icon: SiGit, name: "Git" },
+  { icon: SiMongodb, name: "MongoDB" },
+];
